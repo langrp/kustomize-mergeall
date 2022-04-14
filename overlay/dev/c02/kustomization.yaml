@@ -1,0 +1,9 @@
+resources:
+- flavor-a
+- flavor-b
+
+configMapGenerator:
+  - name: app-config
+    behavior: merge
+    literals:
+    - DB_HOST="db-b"

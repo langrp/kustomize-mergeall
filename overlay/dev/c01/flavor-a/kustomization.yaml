@@ -1,0 +1,10 @@
+resources:
+- ../../../../base/flavor-a
+
+nameSuffix: -c01-a
+
+configMapGenerator:
+  - name: app-config
+    behavior: merge
+    literals:
+    - APP_PROP="some-property-for-a"

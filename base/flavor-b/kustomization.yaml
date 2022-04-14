@@ -1,0 +1,6 @@
+configMapGenerator:
+  - name: app-config
+    behavior: create
+    literals:
+    - DB_HOST="db"
+    - ROLE="flavor-b"
